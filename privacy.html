@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+<title>Privacy Policy – LuLu Hypermarket App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f5faf7;color:#0D2B1A;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{background:#fff;border-bottom:3px solid #E8304A;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(13,140,75,.1)}
+.nav-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:62px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{height:36px;width:auto;object-fit:contain}
+.nav-back{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#0D8C4B;text-decoration:none;padding:8px 16px;border-radius:100px;border:1.5px solid #0D8C4B;transition:all .2s}
+.nav-back:hover{background:#0D8C4B;color:#fff}
+.nav-back svg{width:14px;height:14px;fill:currentColor}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#086233 0%,#0D8C4B 100%);padding:40px 20px 44px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px}
+.hero-inner{position:relative;z-index:1;max-width:620px;margin:0 auto}
+.hero-icon{width:64px;height:64px;background:rgba(255,255,255,.15);border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:1.5px solid rgba(255,255,255,.25)}
+.hero-icon svg{width:32px;height:32px;fill:#fff}
+.hero h1{font-size:clamp(22px,5vw,30px);font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:-.3px}
+.hero p{font-size:14px;color:rgba(255,255,255,.75);line-height:1.6}
+.hero-meta{display:inline-flex;align-items:center;gap:6px;margin-top:14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:100px;font-size:12px;color:rgba(255,255,255,.8);font-weight:600}
+.hero-meta svg{width:13px;height:13px;fill:rgba(255,255,255,.7)}
+
+/* CONTENT */
+.content{max-width:860px;margin:0 auto;padding:40px 20px 80px}
+
+.toc{background:#fff;border-radius:16px;border:1.5px solid #B8D9C8;padding:20px 24px;margin-bottom:36px}
+.toc-title{font-size:13px;font-weight:700;color:#0D8C4B;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:7px}
+.toc-title svg{width:15px;height:15px;fill:#0D8C4B}
+.toc-list{display:flex;flex-direction:column;gap:6px}
+.toc-list a{font-size:13px;color:#086233;text-decoration:none;font-weight:500;display:flex;align-items:center;gap:7px;padding:4px 0;border-bottom:1px solid #EBF7F0;transition:color .2s}
+.toc-list a:last-child{border-bottom:none}
+.toc-list a:hover{color:#0D8C4B}
+.toc-list a svg{width:12px;height:12px;fill:#0D8C4B;flex-shrink:0}
+
+.section{margin-bottom:36px;scroll-margin-top:80px}
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.section-num{width:36px;height:36px;border-radius:10px;background:#0D8C4B;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.section h2{font-size:18px;font-weight:700;color:#051A0E;letter-spacing:-.2px}
+.section p{font-size:14px;color:#2a4a38;line-height:1.85;margin-bottom:12px}
+.section p:last-child{margin-bottom:0}
+.section ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:12px;padding-left:4px}
+.section ul li{font-size:14px;color:#2a4a38;line-height:1.7;display:flex;align-items:flex-start;gap:10px}
+.section ul li::before{content:'';width:7px;height:7px;background:#0D8C4B;border-radius:50%;flex-shrink:0;margin-top:8px}
+
+.highlight-box{background:#EBF7F0;border:1.5px solid #B8D9C8;border-radius:14px;padding:18px 20px;margin:16px 0;display:flex;align-items:flex-start;gap:12px}
+.highlight-box svg{width:22px;height:22px;fill:#0D8C4B;flex-shrink:0;margin-top:1px}
+.highlight-box p{font-size:13px;color:#086233;line-height:1.7;margin:0}
+.highlight-box p strong{color:#051A0E}
+
+.warning-box{background:#FEF0F2;border:1.5px solid #F9C0C8;border-radius:14px;padding:18px 20px;margin:16px 0;display:flex;align-items:flex-start;gap:12px}
+.warning-box svg{width:22px;height:22px;fill:#E8304A;flex-shrink:0;margin-top:1px}
+.warning-box p{font-size:13px;color:#8B1520;line-height:1.7;margin:0}
+
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:12px;border:1.5px solid #B8D9C8}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead{background:#0D8C4B}
+thead th{padding:12px 16px;text-align:left;color:#fff;font-weight:600;font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+tbody tr:nth-child(even){background:#EBF7F0}
+tbody tr:nth-child(odd){background:#fff}
+tbody td{padding:12px 16px;color:#1a3a28;line-height:1.5;vertical-align:top}
+tbody td:first-child{font-weight:600;color:#051A0E}
+
+.contact-card{background:#fff;border-radius:16px;border:1.5px solid #B8D9C8;padding:24px;margin-top:16px;display:flex;align-items:flex-start;gap:16px}
+.contact-icon{width:48px;height:48px;background:#EBF7F0;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:24px;height:24px;fill:#0D8C4B}
+.contact-name{font-size:15px;font-weight:700;color:#051A0E;margin-bottom:4px}
+.contact-detail{font-size:13px;color:#4A7060;line-height:1.7}
+.contact-detail a{color:#0D8C4B;text-decoration:none;font-weight:600}
+
+/* FOOTER */
+.footer{background:#051A0E;padding:28px 20px;text-align:center}
+.footer-logo{display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.footer-logo img{height:28px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.8}
+.footer-text{font-size:12px;color:rgba(255,255,255,.38);line-height:1.9}
+.footer-links{margin-top:10px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.4);text-decoration:none}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:600px){
+  .content{padding:28px 16px 60px}
+  .toc{padding:16px}
+  .contact-card{flex-direction:column;gap:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="https://gcc.luluhypermarket.com/akn-logo-english.svg" alt="LuLu Hypermarket">
+    </a>
+    <a class="nav-back" href="index.html">
+      <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      Back to Sale
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>How LuLu Hypermarket collects, uses, and protects your personal information when you use our app and services.</p>
+    <div class="hero-meta">
+      <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+      Last updated: January 2026
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <div class="toc-title">
+      <svg viewBox="0 0 24 24"><path d="M3 9h14V7H3v2zm0 4h14v-2H3v2zm0 4h14v-2H3v2zm16 0h2v-2h-2v2zm0-10v2h2V7h-2zm0 6h2v-2h-2v2z"/></svg>
+      Contents
+    </div>
+    <div class="toc-list">
+      <a href="#s1"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>1. Information We Collect</a>
+      <a href="#s2"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>2. How We Use Your Information</a>
+      <a href="#s3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>3. Information Sharing</a>
+      <a href="#s4"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>4. Data Storage &amp; Security</a>
+      <a href="#s5"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>5. Cookies &amp; Tracking</a>
+      <a href="#s6"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>6. Your Rights</a>
+      <a href="#s7"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>7. Children's Privacy</a>
+      <a href="#s8"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>8. Changes to This Policy</a>
+      <a href="#s9"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>9. Contact Us</a>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="section">
+    <div class="highlight-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+      <p><strong>Your privacy matters to us.</strong> This Privacy Policy explains how LuLu Group International LLC ("LuLu", "we", "us", or "our") handles your personal data when you download and use the LuLu Hypermarket app. By using our app, you agree to the practices described in this policy.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>Information We Collect</h2>
+    </div>
+    <p>We collect information you provide directly to us and information collected automatically when you use our app.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Type</th><th>What We Collect</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Account Info</td><td>Name, email address, phone number, password</td><td>To create and manage your account</td></tr>
+          <tr><td>Order Info</td><td>Delivery address, order history, payment method type</td><td>To process and deliver your orders</td></tr>
+          <tr><td>Device Info</td><td>Device type, OS version, app version, device ID</td><td>App functionality and troubleshooting</td></tr>
+          <tr><td>Usage Data</td><td>Pages viewed, products browsed, search queries, tap events</td><td>To improve app experience</td></tr>
+          <tr><td>Location</td><td>Approximate location (with permission)</td><td>To show nearby stores and delivery availability</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight-box">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      <p>We <strong>do not store full payment card numbers</strong>. Payment processing is handled by certified third-party payment processors compliant with PCI-DSS standards.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>How We Use Your Information</h2>
+    </div>
+    <p>We use the information we collect to operate, improve, and personalise our services:</p>
+    <ul>
+      <li>Process and fulfil your orders, including delivery coordination and payment confirmation</li>
+      <li>Send order confirmations, delivery updates, and customer service communications</li>
+      <li>Personalise product recommendations and clearance deal alerts based on your preferences</li>
+      <li>Improve app performance, fix bugs, and develop new features</li>
+      <li>Send promotional offers and sale notifications (you can opt out at any time)</li>
+      <li>Detect and prevent fraud, abuse, and security incidents</li>
+      <li>Comply with legal obligations applicable in your country</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>Information Sharing</h2>
+    </div>
+    <p>We do not sell your personal information. We share data only in these limited circumstances:</p>
+    <ul>
+      <li><strong>Delivery partners</strong> — Your name, address, and phone number are shared with logistics providers to fulfil your order</li>
+      <li><strong>Payment processors</strong> — Encrypted payment data is shared with PCI-compliant payment gateways only</li>
+      <li><strong>Analytics providers</strong> — Anonymised, aggregated usage data to help us understand app performance</li>
+      <li><strong>Legal requirements</strong> — If required by law, court order, or government authority in any country we operate</li>
+      <li><strong>Business transfers</strong> — In the event of a merger, acquisition, or sale of company assets</li>
+    </ul>
+    <div class="warning-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+      <p>We never sell, rent, or trade your personal information to third parties for their own marketing purposes.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>Data Storage &amp; Security</h2>
+    </div>
+    <p>Your data is stored on secure servers located within the GCC region. We implement industry-standard security measures including:</p>
+    <ul>
+      <li>AES-256 encryption for data at rest</li>
+      <li>TLS 1.2+ encryption for all data in transit</li>
+      <li>Regular security audits and penetration testing</li>
+      <li>Access controls limiting employee access to personal data on a need-to-know basis</li>
+      <li>Automatic session timeouts and two-factor authentication for staff systems</li>
+    </ul>
+    <p>We retain your personal data for as long as your account is active, or as required to provide services and comply with legal obligations. You may request deletion of your account and data at any time by contacting us.</p>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>Cookies &amp; Tracking</h2>
+    </div>
+    <p>Our app and website use cookies and similar tracking technologies to enhance your experience. These include:</p>
+    <ul>
+      <li><strong>Essential cookies</strong> — Required for the app to function (login sessions, cart state)</li>
+      <li><strong>Analytics cookies</strong> — Help us understand how users interact with the app (e.g. Google Analytics)</li>
+      <li><strong>Preference cookies</strong> — Remember your language, region, and display settings</li>
+      <li><strong>Marketing cookies</strong> — Used to show you relevant ads on third-party platforms (optional)</li>
+    </ul>
+    <p>You can manage cookie preferences in your device settings or by contacting us. Disabling essential cookies may affect app functionality.</p>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>Your Rights</h2>
+    </div>
+    <p>Depending on your country of residence, you may have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access</strong> — Request a copy of the personal data we hold about you</li>
+      <li><strong>Correction</strong> — Ask us to correct inaccurate or incomplete data</li>
+      <li><strong>Deletion</strong> — Request deletion of your personal data ("right to be forgotten")</li>
+      <li><strong>Portability</strong> — Receive your data in a machine-readable format</li>
+      <li><strong>Objection</strong> — Object to processing of your data for marketing purposes</li>
+      <li><strong>Withdrawal of consent</strong> — Withdraw consent at any time where processing is based on consent</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at the details in Section 9. We will respond within 30 days.</p>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section" id="s7">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h2>Children's Privacy</h2>
+    </div>
+    <p>Our app is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately and we will delete it promptly.</p>
+    <p>Users between 13–18 years of age should use the app only with parental or guardian consent.</p>
+  </div>
+
+  <!-- SECTION 8 -->
+  <div class="section" id="s8">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make significant changes, we will:</p>
+    <ul>
+      <li>Update the "Last updated" date at the top of this page</li>
+      <li>Send a push notification or in-app message informing you of the change</li>
+      <li>In cases of material changes, request fresh consent where required by law</li>
+    </ul>
+    <p>We encourage you to review this policy periodically. Continued use of the app after changes take effect constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <!-- SECTION 9 -->
+  <div class="section" id="s9">
+    <div class="section-header">
+      <div class="section-num">9</div>
+      <h2>Contact Us</h2>
+    </div>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please reach out to us:</p>
+
+    <div class="contact-card">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+      </div>
+      <div>
+        <div class="contact-name">LuLu Group International LLC</div>
+        <div class="contact-detail">
+          Data Protection Officer<br>
+          P.O. Box 4048, Abu Dhabi, UAE<br>
+          Email: <a href="/cdn-cgi/l/email-protection#addddfc4dbccced4edc1d8c1d8c5d4ddc8dfc0ccdfc6c8d983cec2c0"><span class="__cf_email__" data-cfemail="2757554e5146445e674b524b524f5e5742554a46554c42530944484a">[email&#160;protected]</span></a><br>
+          Website: <a href="https://gcc.luluhypermarket.com" target="_blank">gcc.luluhypermarket.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="margin-top:20px">
+      <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+      <p>For urgent data breach notifications or security concerns, please email <a href="/cdn-cgi/l/email-protection#a4d7c1c7d1d6cdd0dde4c8d1c8d1ccddd4c1d6c9c5d6cfc1d08ac7cbc9" style="color:#086233;font-weight:600"><span class="__cf_email__" data-cfemail="83f0e6e0f6f1eaf7fac3eff6eff6ebfaf3e6f1eee2f1e8e6f7ade0ecee">[email&#160;protected]</span></a>. We aim to acknowledge all security reports within 24 hours.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="https://gcc.luluhypermarket.com/akn-logo-english.svg" alt="LuLu Hypermarket">
+  </div>
+  <p class="footer-text">&copy; 2026 Lulu Group International LLC. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">Back to Sale</a>
+    <a href="#">Terms of Service</a>
+    <a href="https://gcc.luluhypermarket.com" target="_blank">Official Website</a>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
